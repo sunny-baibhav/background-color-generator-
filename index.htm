@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Background Color Generator</h1>
+        <p>you can customize color solid as well as gredient and download in single click</p>
+        <div class="controls">
+            <button id="generateColor">Generate Random Color</button>
+            <button id="generateGradient">Generate Random Gradient</button>
+            <input type="color" id="colorPicker1">
+            <input type="color" id="colorPicker2" style="display:none;">
+            <select id="gradientDirection" style="display:none;">
+                <option value="to right">To Right</option>
+                <option value="to left">To Left</option>
+                <option value="to top">To Top</option>
+                <option value="to bottom">To Bottom</option>
+                <option value="to top right">To Top Right</option>
+                <option value="to top left">To Top Left</option>
+                <option value="to bottom right">To Bottom Right</option>
+                <option value="to bottom left">To Bottom Left</option>
+            </select>
+            <button id="downloadImage">Download Background</button>
+        </div>
+        <div id="background" class="background"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
